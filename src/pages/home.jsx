@@ -1,8 +1,6 @@
 import React from 'react'
 import logo from "../assets/thefloordoc.png"
-import floor1 from "../assets/floorcleaner.png"
-import floor2 from "../assets/concretebuffer.png"
-import floor3 from "../assets/refinish.png"
+import ImageSlider from '../components/imageSlider'
 
 const home = () => {
   return (
@@ -30,10 +28,11 @@ const home = () => {
           to save your floors, get in touch!
         </span>
       </div>
-      <div class="flex gap-6">
-        <img src={floor1} />
-        <img src={floor2} />
-        <img src={floor3}/>
+      <div>
+        <ImageSlider/>
+      </div>
+            <div class="h-screen">
+  
       </div>
       </>
   )
